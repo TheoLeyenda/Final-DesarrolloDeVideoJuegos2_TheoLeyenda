@@ -13,9 +13,12 @@ public class HeadSnake : MonoBehaviour {
         left,
         right
     }
+    [HideInInspector]
+    public static HeadSnake headSnake;
     private int cantOriginalVaperParts;
     private Vector3 startPosition;
-    private int life =3;
+    [HideInInspector]
+    public int life =3;
     private Direcction direcction;
     public float rangeTeleportFoodX;
     public float rangeTeleportFoodY;
@@ -28,16 +31,20 @@ public class HeadSnake : MonoBehaviour {
     public float step;
     private Vector3 lastPosition;
 
-
-	void Start () {
-        cantOriginalVaperParts = VaperParts.Count - 1;
+    private void Awake()
+    {
+        headSnake = this;
+    }
+    void Start () {
+       
+        DataStructure.auxiliaryDataStructure.SetPlayerValue();
+        cantOriginalVaperParts = VaperParts.Count;
         startPositionVaperParts = new List<Vector3>();
         startPosition = transform.position;
         for(int i = 0; i<VaperParts.Count; i++)
         {
             startPositionVaperParts.Add(VaperParts[i].transform.position);
         }
-
         //defino la distancia del jugador a base del tamaño de su collider
         if (step == 0)
         {
@@ -51,10 +58,6 @@ public class HeadSnake : MonoBehaviour {
     {
         CheckMove();
         CheckDead();
-        if(Input.GetKeyDown(KeyCode.P))
-        {
-            Time.timeScale = 0;
-        }
     }
     public void CheckDead()
     {
@@ -127,31 +130,12 @@ public class HeadSnake : MonoBehaviour {
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Player" )
+        if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "limite")
         {
             //cada vez que morimos volvemos a cargar la escena en la que se encuentra el jugador
-            transform.position = startPosition;
-            for (int i = 0; i < VaperParts.Count; i++)
-            {
-                if (i < startPositionVaperParts.Count && i < VaperParts.Count)
-                {
-                    VaperParts[i].position = startPositionVaperParts[i];
-                }
-                if(i> cantOriginalVaperParts)
-                {
-                    
-                    Destroy(VaperParts[i].gameObject);
-                    VaperParts.Remove(VaperParts[i]);
-                    
-                }
-                VaperParts[i].transform.gameObject.SetActive(false);
-            }
             life--;
-            direcction = Direcction.up;
-            for(int i = 0; i< cantOriginalVaperParts + 1; i++)
-            {
-                VaperParts[i].gameObject.SetActive(true);
-            }
+            DataStructure.auxiliaryDataStructure.playerData.life = life;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         if(collision.gameObject.tag == "comida")
         {
