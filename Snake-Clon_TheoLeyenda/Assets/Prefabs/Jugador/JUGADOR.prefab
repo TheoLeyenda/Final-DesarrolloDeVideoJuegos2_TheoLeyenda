@@ -449,8 +449,8 @@ MonoBehaviour:
   - {fileID: 4250861538942184}
   - {fileID: 4545198376266138}
   - {fileID: 4567018174219508}
-  frameRate: 0.2
-  step: 0.7
+  FPS: 0.2
+  distanceOfMovement: 0.7
 --- !u!212 &212063565753567520
 SpriteRenderer:
   m_ObjectHideFlags: 1

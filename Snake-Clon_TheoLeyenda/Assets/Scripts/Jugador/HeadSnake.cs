@@ -28,10 +28,10 @@ public class HeadSnake : MonoBehaviour {
     public GameObject vaperPartPrefab;
     public List<Transform> VaperParts;
     private List<Vector3> startPositionVaperParts;
-    //tiempo en el que pasa un frame a otro frame (cuanto mas pequeño sea el numero de los frames mas dificil sera el juego)
-    public float frameRate;
+    //tiempo en el que pasa un frame a otro frame (cuanto mas pequeño sea el numero de los frames mas dificil sera el juego puesto que la vivora se movera mas rapido)
+    public float FPS;
     //distancia en la que se mueve la serpiente. 
-    public float step;
+    public float distanceOfMovement;
     private Vector3 lastPosition;
 
     private void Awake()
@@ -49,16 +49,16 @@ public class HeadSnake : MonoBehaviour {
             startPositionVaperParts.Add(VaperParts[i].transform.position);
         }
         //defino la distancia del jugador a base del tamaño de su collider
-        if (step == 0)
+        if (distanceOfMovement == 0)
         {
-            step = GetComponent<BoxCollider2D>().size.x;
+            distanceOfMovement = GetComponent<BoxCollider2D>().size.x;
         }
 
         //Esta funcion invoca la funcion que este escrita en el primer parametro entre los intervalos del valor del segundo y tercer parametro 
-        InvokeRepeating("Movement", frameRate, frameRate);
+        InvokeRepeating("Movement", FPS, FPS);
         if (originalMove)
         {
-            InvokeRepeating("UpdateCameraPlayerPosition", frameRate, frameRate);
+            InvokeRepeating("UpdateCameraPlayerPosition", FPS, FPS);
         }
     }
     void Update()
@@ -135,12 +135,12 @@ public class HeadSnake : MonoBehaviour {
         }
         //-----------------------------
         //la serpiente ira a la siguiente posicion tomando en cuenta la distancia a la que se mueve la serpiente
-        nextPosition = nextPosition * step;
+        nextPosition = nextPosition * distanceOfMovement;
         //Muevo a la serpiente
         transform.position = transform.position + nextPosition;
         if (!originalMove)
         {
-            cameraPlayer.transform.position = cameraPlayer.transform.position + nextPosition * Time.deltaTime * (step+cameraSpeed);
+            cameraPlayer.transform.position = cameraPlayer.transform.position + nextPosition * Time.deltaTime * (distanceOfMovement+cameraSpeed);
         }
         MoveVaperPars();
     }
