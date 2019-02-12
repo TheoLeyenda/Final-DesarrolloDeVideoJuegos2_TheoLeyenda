@@ -13,6 +13,9 @@ public class HeadSnake : MonoBehaviour {
         left,
         right
     }
+    public float cameraSpeed;
+    public bool originalMove;
+    public GameObject cameraPlayer;
     [HideInInspector]
     public static HeadSnake headSnake;
     //private int cantOriginalVaperParts;
@@ -53,11 +56,20 @@ public class HeadSnake : MonoBehaviour {
 
         //Esta funcion invoca la funcion que este escrita en el primer parametro entre los intervalos del valor del segundo y tercer parametro 
         InvokeRepeating("Movement", frameRate, frameRate);
-	}
+        if (originalMove)
+        {
+            InvokeRepeating("UpdateCameraPlayerPosition", frameRate, frameRate);
+        }
+    }
     void Update()
     {
         CheckMove();
         CheckDead();
+        
+    }
+    public void UpdateCameraPlayerPosition()
+    {
+        cameraPlayer.transform.position = new Vector3(transform.position.x,transform.position.y, cameraPlayer.transform.position.z);
     }
     public void CheckDead()
     {
@@ -126,6 +138,10 @@ public class HeadSnake : MonoBehaviour {
         nextPosition = nextPosition * step;
         //Muevo a la serpiente
         transform.position = transform.position + nextPosition;
+        if (!originalMove)
+        {
+            cameraPlayer.transform.position = cameraPlayer.transform.position + nextPosition * Time.deltaTime * (step+cameraSpeed);
+        }
         MoveVaperPars();
     }
     private void OnTriggerEnter2D(Collider2D collision)
