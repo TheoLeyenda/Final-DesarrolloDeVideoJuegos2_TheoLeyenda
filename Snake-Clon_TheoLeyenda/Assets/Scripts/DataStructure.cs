@@ -7,6 +7,7 @@ public class DataStructure : MonoBehaviour {
     // Use this for initialization
     // Use this for initialization
     public static DataStructure auxiliaryDataStructure;
+    public int life;
 
     [HideInInspector]
     public PlayerData playerData;
@@ -28,7 +29,7 @@ public class DataStructure : MonoBehaviour {
     }
     private void Start()
     {
-        playerData.life = HeadSnake.headSnake.life;
+        playerData.life = life;
         nextLevel.level = 0;
     }
     public struct NextLevel

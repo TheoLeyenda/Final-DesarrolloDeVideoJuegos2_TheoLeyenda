@@ -15,7 +15,7 @@ public class HeadSnake : MonoBehaviour {
     }
     [HideInInspector]
     public static HeadSnake headSnake;
-    private int cantOriginalVaperParts;
+    //private int cantOriginalVaperParts;
     private Vector3 startPosition;
     [HideInInspector]
     public int life =3;
@@ -38,7 +38,7 @@ public class HeadSnake : MonoBehaviour {
     void Start () {
        
         DataStructure.auxiliaryDataStructure.SetPlayerValue();
-        cantOriginalVaperParts = VaperParts.Count;
+        //cantOriginalVaperParts = VaperParts.Count;
         startPositionVaperParts = new List<Vector3>();
         startPosition = transform.position;
         for(int i = 0; i<VaperParts.Count; i++)
