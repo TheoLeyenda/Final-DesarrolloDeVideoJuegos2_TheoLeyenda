@@ -13,13 +13,17 @@ public class HeadSnake : MonoBehaviour {
         left,
         right
     }
+    public bool up;
+    public bool down;
+    public bool left;
+    public bool right;
     public float cameraSpeed;
     public bool originalMove;
     public GameObject cameraPlayer;
     [HideInInspector]
     public static HeadSnake headSnake;
     //private int cantOriginalVaperParts;
-    private Vector3 startPosition;
+    //private Vector3 startPosition;
     [HideInInspector]
     public int life =3;
     private Direcction direcction;
@@ -41,9 +45,10 @@ public class HeadSnake : MonoBehaviour {
     void Start () {
        
         DataStructure.auxiliaryDataStructure.SetPlayerValue();
+        InitialMove();
         //cantOriginalVaperParts = VaperParts.Count;
         startPositionVaperParts = new List<Vector3>();
-        startPosition = transform.position;
+        //startPosition = transform.position;
         for(int i = 0; i<VaperParts.Count; i++)
         {
             startPositionVaperParts.Add(VaperParts[i].transform.position);
@@ -66,6 +71,29 @@ public class HeadSnake : MonoBehaviour {
         CheckMove();
         CheckDead();
         
+    }
+    public void InitialMove()
+    {
+        if (up)
+        {
+            direcction = Direcction.up;
+        }
+        else if(down)
+        {
+            direcction = Direcction.down;
+        }
+        else if(left)
+        {
+            direcction = Direcction.left;
+        }
+        else if(right)
+        {
+            direcction = Direcction.right;
+        }
+        else if(!up && !down && !left && !right)
+        {
+            direcction = Direcction.up;
+        }
     }
     public void UpdateCameraPlayerPosition()
     {
@@ -146,18 +174,19 @@ public class HeadSnake : MonoBehaviour {
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "limite")
+        if (collision.gameObject.tag == "comida")
+        {
+            VaperParts.Add(Instantiate(vaperPartPrefab, VaperParts[VaperParts.Count - 1].transform.position, Quaternion.identity).transform);
+            // teletrasportamos la comida cada vez que la chocamos
+            collision.transform.position = new Vector2(Random.Range(-rangeTeleportFoodX, rangeTeleportFoodX), Random.Range(-rangeTeleportFoodY, rangeTeleportFoodY));
+            
+        }
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "limite")
         {
             //cada vez que morimos volvemos a cargar la escena en la que se encuentra el jugador
             life--;
             DataStructure.auxiliaryDataStructure.playerData.life = life;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-        if(collision.gameObject.tag == "comida")
-        {
-            // teletrasportamos la comida cada vez que la chocamos
-            collision.transform.position = new Vector2(Random.Range(-rangeTeleportFoodX, rangeTeleportFoodX), Random.Range(-rangeTeleportFoodY, rangeTeleportFoodY));
-            VaperParts.Add(Instantiate(vaperPartPrefab, VaperParts[VaperParts.Count - 1].transform.position, Quaternion.identity).transform);
         }
     }
 }
