@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour {
     public int[] scoresRequireds;
     public BoxCollider2D[] collidersGameManager;
     private int phaseActuality;
+    public GameObject[] foodFinalPhase;
     public GameObject[] colliderPhase1;
     public GameObject[] colliderPhase2;
     public GameObject[] colliderPhase3;
@@ -175,12 +176,17 @@ public class GameManager : MonoBehaviour {
                         
                         doors[id].GetComponent<SpriteRenderer>().color = Color.green;
                         doors[id].tag = "pasto";
-                        id++;
                         
-                        if (id > 0)
+                        
+                        if(id >= scoresRequireds.Length)
+                        {
+                            
+                        }
+                        if (id > 0 && id < scoresRequireds.Length-1)
                         {
                             for (int i = 0; i < (scoresRequireds[id] - scoresRequireds[id - 1]); i++)
                             {
+                                Debug.Log("ENTRE");
                                 Instantiate(food, Vector3.zero, Quaternion.identity);
                             }
                         }
@@ -191,6 +197,7 @@ public class GameManager : MonoBehaviour {
                                 Instantiate(food, Vector3.zero, Quaternion.identity);
                             }
                         }
+                        id++;
                     }
                 }
                 break;

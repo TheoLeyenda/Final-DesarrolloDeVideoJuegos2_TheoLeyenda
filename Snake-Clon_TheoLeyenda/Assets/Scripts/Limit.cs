@@ -9,8 +9,8 @@ public class Limit : MonoBehaviour {
     {
         if(collision.tag == "comida" || collision.tag == "comida destruible")
         {
-            collision.GetComponent<SpriteRenderer>().enabled = false;
-            collision.transform.position = new Vector2(Random.Range(-HeadSnake.headSnake.rangeTeleportFoodX, HeadSnake.headSnake.rangeTeleportFoodX), Random.Range(-HeadSnake.headSnake.rangeTeleportFoodY, HeadSnake.headSnake.rangeTeleportFoodY));
+            //collision.GetComponent<SpriteRenderer>().enabled = false;
+            //collision.transform.position = new Vector2(Random.Range(-HeadSnake.headSnake.rangeTeleportFoodX, HeadSnake.headSnake.rangeTeleportFoodX), Random.Range(-HeadSnake.headSnake.rangeTeleportFoodY, HeadSnake.headSnake.rangeTeleportFoodY));
         }
     }
 }
