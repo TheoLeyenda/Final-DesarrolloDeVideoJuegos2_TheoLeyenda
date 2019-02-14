@@ -13,6 +13,10 @@ public class HeadSnake : MonoBehaviour {
         left,
         right
     }
+    //dependiendo de que valor tome esta variable es el puntaje que se le sumara al jugador cuando agarre un pickup de comida
+    private int addScore = 10;
+    [HideInInspector]
+    public int score;
     public bool up;
     public bool down;
     public bool left;
@@ -176,10 +180,20 @@ public class HeadSnake : MonoBehaviour {
     {
         if (collision.gameObject.tag == "comida")
         {
+            score = score + addScore;
+            GameManager.InstanceGameManager.score++;
+            //Agregamos una cola mas a cola para que la serpiente se alargue
             VaperParts.Add(Instantiate(vaperPartPrefab, VaperParts[VaperParts.Count - 1].transform.position, Quaternion.identity).transform);
             // teletrasportamos la comida cada vez que la chocamos
             collision.transform.position = new Vector2(Random.Range(-rangeTeleportFoodX, rangeTeleportFoodX), Random.Range(-rangeTeleportFoodY, rangeTeleportFoodY));
-            
+
+        }
+        if(collision.gameObject.tag == "comida no destruible")
+        {
+            score = score + addScore;
+            GameManager.InstanceGameManager.score++;
+            VaperParts.Add(Instantiate(vaperPartPrefab, VaperParts[VaperParts.Count - 1].transform.position, Quaternion.identity).transform);
+            collision.gameObject.SetActive(false);
         }
         if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "limite")
         {
