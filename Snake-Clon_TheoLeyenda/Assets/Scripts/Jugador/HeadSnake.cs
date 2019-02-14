@@ -188,7 +188,7 @@ public class HeadSnake : MonoBehaviour {
             collision.transform.position = new Vector2(Random.Range(-rangeTeleportFoodX, rangeTeleportFoodX), Random.Range(-rangeTeleportFoodY, rangeTeleportFoodY));
 
         }
-        if(collision.gameObject.tag == "comida no destruible")
+        if(collision.gameObject.tag == "comida destruible")
         {
             score = score + addScore;
             GameManager.InstanceGameManager.score++;

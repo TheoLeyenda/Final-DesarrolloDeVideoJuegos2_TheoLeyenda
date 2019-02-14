@@ -8,7 +8,7 @@ TagManager:
   - limite
   - pasto
   - piso
-  - comida no destruible
+  - comida destruible
   layers:
   - Default
   - TransparentFX
