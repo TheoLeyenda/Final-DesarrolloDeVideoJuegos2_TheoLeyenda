@@ -9,6 +9,8 @@ TagManager:
   - pasto
   - piso
   - comida destruible
+  - rompe comida
+  - parte del jugador
   layers:
   - Default
   - TransparentFX

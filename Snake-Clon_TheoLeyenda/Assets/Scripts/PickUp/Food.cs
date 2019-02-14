@@ -5,30 +5,35 @@ using UnityEngine;
 public class Food : MonoBehaviour {
 
     // Use this for initialization
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
+    private bool teleport;
 
     private void Start()
     {
+        teleport = true;
         spriteRenderer = GetComponent<SpriteRenderer>();
-        transform.position = new Vector2(Random.Range(-HeadSnake.headSnake.rangeTeleportFoodX, HeadSnake.headSnake.rangeTeleportFoodX), Random.Range(-HeadSnake.headSnake.rangeTeleportFoodY, HeadSnake.headSnake.rangeTeleportFoodY));
+        spriteRenderer.enabled = false;
     }
-    private void OnTriggerStay2D(Collider2D collision)
+    private void Update()
     {
-        if(collision.tag == "limite")
+        if(teleport)
         {
             spriteRenderer.enabled = false;
             transform.position = new Vector2(Random.Range(-HeadSnake.headSnake.rangeTeleportFoodX, HeadSnake.headSnake.rangeTeleportFoodX), Random.Range(-HeadSnake.headSnake.rangeTeleportFoodY, HeadSnake.headSnake.rangeTeleportFoodY));
         }
-        if(collision.tag == "piso" || collision.tag == "pasto")
-        {
-            spriteRenderer.enabled = true;
-        }
     }
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "limite")
+       
+        if (collision.tag == "piso" || collision.tag == "pasto")
         {
+            teleport = false;
             spriteRenderer.enabled = true;
         }
+        else
+        {
+            teleport = true;
+        }
+        
     }
 }

@@ -105,7 +105,7 @@ public class HeadSnake : MonoBehaviour {
     }
     public void CheckDead()
     {
-        if (life < 0)
+        if (life <= 0)
         {
             SceneManager.LoadScene("GameOver");
         }

@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\DataStructure.cs" />
     <Compile Include="Assets\Scripts\Jugador\HeadSnake.cs" />
+    <Compile Include="Assets\Scripts\Limit.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
     <Compile Include="Assets\Scripts\PickUp\Food.cs" />
