@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
@@ -23,6 +24,12 @@ public class GameManager : MonoBehaviour {
     [HideInInspector]
     public int score;
     public GameObject[] doors;
+    [HideInInspector]
+    public float minutes;
+    [HideInInspector]
+    public float seconds;
+    public Text textScore;
+    //hacer el texto de tiempo.
 	void Start () {
         id = 0;
         phaseActuality = 1;
@@ -31,11 +38,28 @@ public class GameManager : MonoBehaviour {
         {
             Instantiate(food, Vector3.zero, Quaternion.identity);
         }
+        textScore.text = "Puntaje: " + DataStructure.auxiliaryDataStructure.playerData.score;
     }
 	
 	// Update is called once per frame
 	void Update () {
         CheckLevel();
+        TimeOnLevel();
+    }
+    public void TimeOnLevel()
+    {
+        if(seconds <= 59)
+        {
+            seconds = seconds + Time.deltaTime;
+            DataStructure.auxiliaryDataStructure.seconds = seconds;
+        }
+        if(seconds > 59)
+        {
+            minutes++;
+            seconds = 0;
+            DataStructure.auxiliaryDataStructure.minutes = minutes;
+            DataStructure.auxiliaryDataStructure.seconds = seconds;
+        }
     }
     public void CheckLevel()
     {
@@ -189,7 +213,7 @@ public class GameManager : MonoBehaviour {
                         }
                         
                         doors[id].GetComponent<SpriteRenderer>().color = Color.green;
-                        doors[id].tag = "Untagged";
+                        doors[id].tag = "puerta comun";
 
                         
                         if (id > 0 && id < scoresRequireds.Length-1)

@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\LoadScreem.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\PickUp\Food.cs" />
     <Compile Include="Assets\Scripts\SplashScreenController.cs" />
     <Reference Include="UnityEditor.StandardEvents">

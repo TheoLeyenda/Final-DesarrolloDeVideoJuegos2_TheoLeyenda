@@ -69,6 +69,7 @@ public class HeadSnake : MonoBehaviour {
         {
             InvokeRepeating("UpdateCameraPlayerPosition", FPS, FPS);
         }
+        score = DataStructure.auxiliaryDataStructure.playerData.score;
     }
     void Update()
     {
@@ -182,6 +183,8 @@ public class HeadSnake : MonoBehaviour {
         if (collision.gameObject.tag == "comida")
         {
             score = score + addScore;
+            DataStructure.auxiliaryDataStructure.playerData.score = DataStructure.auxiliaryDataStructure.playerData.score + addScore;
+            GameManager.InstanceGameManager.textScore.text = "Puntaje: " +DataStructure.auxiliaryDataStructure.playerData.score;
             GameManager.InstanceGameManager.score++;
             //Agregamos una cola mas a cola para que la serpiente se alargue
             VaperParts.Add(Instantiate(vaperPartPrefab, VaperParts[VaperParts.Count - 1].transform.position, Quaternion.identity).transform);
@@ -192,6 +195,8 @@ public class HeadSnake : MonoBehaviour {
         if (collision.gameObject.tag == "comida destruible")
         {
             score = score + addScore;
+            DataStructure.auxiliaryDataStructure.playerData.score = DataStructure.auxiliaryDataStructure.playerData.score + addScore;
+            GameManager.InstanceGameManager.textScore.text = "Puntaje: " + DataStructure.auxiliaryDataStructure.playerData.score;
             GameManager.InstanceGameManager.score++;
             VaperParts.Add(Instantiate(vaperPartPrefab, VaperParts[VaperParts.Count - 1].transform.position, Quaternion.identity).transform);
             collision.gameObject.SetActive(false);
@@ -205,7 +210,12 @@ public class HeadSnake : MonoBehaviour {
         }
         if (collision.gameObject.tag == "puerta")
         {
+            DataStructure.auxiliaryDataStructure.playerData.score = DataStructure.auxiliaryDataStructure.playerData.score + 50;
             SceneManager.LoadScene("Pantalla de carga");
+        }
+        if(collision.gameObject.tag == "puerta comun")
+        {
+            DataStructure.auxiliaryDataStructure.playerData.score = DataStructure.auxiliaryDataStructure.playerData.score + 50;
         }
         if (collision.gameObject.tag == "puerta final")
         {

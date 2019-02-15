@@ -13,6 +13,13 @@ public class DataStructure : MonoBehaviour {
     public PlayerData playerData;
     [HideInInspector]
     public NextLevel nextLevel;
+    [HideInInspector]
+    public float seconds;
+    [HideInInspector]
+    public float minutes;
+
+    private float totalSeconds;
+    private float totalMinutes;
 
     private void Awake()
     {
@@ -30,7 +37,18 @@ public class DataStructure : MonoBehaviour {
     private void Start()
     {
         playerData.life = life;
+        playerData.score = 0;
         nextLevel.level = 0;
+    }
+    public void AddTotalTime()
+    {
+        totalSeconds = totalSeconds + seconds;
+        if(totalSeconds > 59)
+        {
+            totalMinutes++;
+            totalSeconds = totalSeconds - 59;
+        }
+        totalMinutes = totalMinutes + minutes;
     }
     public struct NextLevel
     {
@@ -39,9 +57,7 @@ public class DataStructure : MonoBehaviour {
     public struct PlayerData
     {
         public int life;
-        public float score;
-        public float Seconds;
-        public float minutes;
+        public int score;
     }
     public void SetPlayerData()
     {
