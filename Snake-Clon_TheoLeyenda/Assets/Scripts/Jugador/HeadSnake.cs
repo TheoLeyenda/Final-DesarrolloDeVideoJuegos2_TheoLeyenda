@@ -105,7 +105,7 @@ public class HeadSnake : MonoBehaviour {
     }
     public void CheckDead()
     {
-        if (life <= 0)
+        if (life < 0)
         {
             SceneManager.LoadScene("GameOver");
         }
@@ -178,7 +178,7 @@ public class HeadSnake : MonoBehaviour {
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+
         if (collision.gameObject.tag == "comida")
         {
             score = score + addScore;
@@ -189,7 +189,7 @@ public class HeadSnake : MonoBehaviour {
             collision.transform.position = new Vector2(Random.Range(-rangeTeleportFoodX, rangeTeleportFoodX), Random.Range(-rangeTeleportFoodY, rangeTeleportFoodY));
 
         }
-        if(collision.gameObject.tag == "comida destruible")
+        if (collision.gameObject.tag == "comida destruible")
         {
             score = score + addScore;
             GameManager.InstanceGameManager.score++;
@@ -202,6 +202,14 @@ public class HeadSnake : MonoBehaviour {
             life--;
             DataStructure.auxiliaryDataStructure.playerData.life = life;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        if (collision.gameObject.tag == "puerta")
+        {
+            SceneManager.LoadScene("Pantalla de carga");
+        }
+        if (collision.gameObject.tag == "puerta final")
+        {
+            SceneManager.LoadScene("Juego Completado");
         }
     }
 }

@@ -11,6 +11,8 @@ TagManager:
   - comida destruible
   - rompe comida
   - parte del jugador
+  - puerta
+  - puerta final
   layers:
   - Default
   - TransparentFX

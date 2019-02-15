@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour {
     public int[] scoresRequireds;
     public BoxCollider2D[] collidersGameManager;
     private int phaseActuality;
+    public GameObject meta;
     public GameObject[] foodFinalPhase;
     public GameObject[] colliderPhase1;
     public GameObject[] colliderPhase2;
@@ -44,17 +45,30 @@ public class GameManager : MonoBehaviour {
                 if(score >= scoreRequired)
                 {
                     doors[id].GetComponent<SpriteRenderer>().color = Color.green;
-                    doors[id].tag = "pasto";
+                    doors[id].tag = "puerta";
                 }
                 break;
             case 2:
                 if (score >= scoreRequired)
                 {
                     doors[id].GetComponent<SpriteRenderer>().color = Color.green;
-                    doors[id].tag = "pasto";
+                    doors[id].tag = "puerta";
                 }
                 break;
             case 3:
+                int cant = 0;
+                for (int i = 0; i < foodFinalPhase.Length; i++)
+                {
+                    if (foodFinalPhase[i].activeSelf == false)
+                    {
+                        cant++;
+                    }
+                }
+                if (cant >= foodFinalPhase.Length)
+                {
+                    meta.GetComponent<SpriteRenderer>().color = Color.green;
+                    meta.tag = "puerta final";
+                }
                 if (id < scoresRequireds.Length)
                 {
                     if (score >= scoresRequireds[id])
@@ -175,18 +189,13 @@ public class GameManager : MonoBehaviour {
                         }
                         
                         doors[id].GetComponent<SpriteRenderer>().color = Color.green;
-                        doors[id].tag = "pasto";
+                        doors[id].tag = "Untagged";
+
                         
-                        
-                        if(id >= scoresRequireds.Length)
-                        {
-                            
-                        }
                         if (id > 0 && id < scoresRequireds.Length-1)
                         {
                             for (int i = 0; i < (scoresRequireds[id] - scoresRequireds[id - 1]); i++)
                             {
-                                Debug.Log("ENTRE");
                                 Instantiate(food, Vector3.zero, Quaternion.identity);
                             }
                         }

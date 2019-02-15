@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 74514}
   m_Layer: 0
   m_Name: grass (27)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -413,7 +413,7 @@ GameObject:
   - component: {fileID: 29722315}
   m_Layer: 0
   m_Name: grass (56)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -488,7 +488,7 @@ GameObject:
   - component: {fileID: 50701506}
   m_Layer: 0
   m_Name: grass (47)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1521,7 +1521,7 @@ GameObject:
   - component: {fileID: 117401176}
   m_Layer: 0
   m_Name: grass (53)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1836,7 +1836,7 @@ GameObject:
   - component: {fileID: 136733801}
   m_Layer: 0
   m_Name: grass (17)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1911,7 +1911,7 @@ GameObject:
   - component: {fileID: 143136098}
   m_Layer: 0
   m_Name: grass (71)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1986,7 +1986,7 @@ GameObject:
   - component: {fileID: 155303825}
   m_Layer: 0
   m_Name: grass (4)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2249,7 +2249,7 @@ GameObject:
   - component: {fileID: 178676373}
   m_Layer: 0
   m_Name: grass (35)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3061,7 +3061,7 @@ GameObject:
   - component: {fileID: 244011138}
   m_Layer: 0
   m_Name: grass (18)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3460,7 +3460,7 @@ GameObject:
   - component: {fileID: 283841086}
   m_Layer: 0
   m_Name: grass (39)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3843,7 +3843,7 @@ GameObject:
   - component: {fileID: 321317136}
   m_Layer: 0
   m_Name: grass (50)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4012,7 +4012,7 @@ GameObject:
   - component: {fileID: 348369058}
   m_Layer: 0
   m_Name: grass (24)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4301,7 +4301,7 @@ GameObject:
   - component: {fileID: 386732901}
   m_Layer: 0
   m_Name: grass (42)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4470,7 +4470,7 @@ GameObject:
   - component: {fileID: 409640227}
   m_Layer: 0
   m_Name: grass (51)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4545,7 +4545,7 @@ GameObject:
   - component: {fileID: 417690324}
   m_Layer: 0
   m_Name: grass (62)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4808,7 +4808,7 @@ GameObject:
   - component: {fileID: 439208225}
   m_Layer: 0
   m_Name: grass (3)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5074,7 +5074,7 @@ GameObject:
   - component: {fileID: 491980941}
   m_Layer: 0
   m_Name: grass (23)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5149,7 +5149,7 @@ GameObject:
   - component: {fileID: 526428934}
   m_Layer: 0
   m_Name: grass (15)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5318,7 +5318,7 @@ GameObject:
   - component: {fileID: 554569728}
   m_Layer: 0
   m_Name: grass (30)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5393,7 +5393,7 @@ GameObject:
   - component: {fileID: 576148648}
   m_Layer: 0
   m_Name: grass (67)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5468,7 +5468,7 @@ GameObject:
   - component: {fileID: 578554803}
   m_Layer: 0
   m_Name: grass (33)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5543,7 +5543,7 @@ GameObject:
   - component: {fileID: 593708612}
   m_Layer: 0
   m_Name: grass (75)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5618,7 +5618,7 @@ GameObject:
   - component: {fileID: 594010925}
   m_Layer: 0
   m_Name: grass (5)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5933,7 +5933,7 @@ GameObject:
   - component: {fileID: 633682932}
   m_Layer: 0
   m_Name: grass (11)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6008,7 +6008,7 @@ GameObject:
   - component: {fileID: 659510073}
   m_Layer: 0
   m_Name: grass (46)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6083,7 +6083,7 @@ GameObject:
   - component: {fileID: 667654520}
   m_Layer: 0
   m_Name: grass (76)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6346,7 +6346,7 @@ GameObject:
   - component: {fileID: 706947954}
   m_Layer: 0
   m_Name: grass (55)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6421,7 +6421,7 @@ GameObject:
   - component: {fileID: 731995024}
   m_Layer: 0
   m_Name: grass (52)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7253,7 +7253,7 @@ GameObject:
   - component: {fileID: 821530596}
   m_Layer: 0
   m_Name: grass (61)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7328,7 +7328,7 @@ GameObject:
   - component: {fileID: 828380250}
   m_Layer: 0
   m_Name: grass (72)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7403,7 +7403,7 @@ GameObject:
   - component: {fileID: 835914311}
   m_Layer: 0
   m_Name: grass (10)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7880,7 +7880,7 @@ GameObject:
   - component: {fileID: 910663700}
   m_Layer: 0
   m_Name: grass (54)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8827,7 +8827,7 @@ GameObject:
   - component: {fileID: 1072140163}
   m_Layer: 0
   m_Name: grass (12)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8996,7 +8996,7 @@ GameObject:
   - component: {fileID: 1095165703}
   m_Layer: 0
   m_Name: grass (22)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9071,7 +9071,7 @@ GameObject:
   - component: {fileID: 1117057553}
   m_Layer: 0
   m_Name: grass (36)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9146,7 +9146,7 @@ GameObject:
   - component: {fileID: 1137600710}
   m_Layer: 0
   m_Name: grass (57)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9221,7 +9221,7 @@ GameObject:
   - component: {fileID: 1155873537}
   m_Layer: 0
   m_Name: grass (66)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9484,7 +9484,7 @@ GameObject:
   - component: {fileID: 1193120125}
   m_Layer: 0
   m_Name: grass (32)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9736,7 +9736,7 @@ GameObject:
   - component: {fileID: 1214629439}
   m_Layer: 0
   m_Name: grass (70)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9905,7 +9905,7 @@ GameObject:
   - component: {fileID: 1221622452}
   m_Layer: 0
   m_Name: grass (28)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10100,7 +10100,7 @@ GameObject:
   - component: {fileID: 1243296838}
   m_Layer: 0
   m_Name: grass (73)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10175,7 +10175,7 @@ GameObject:
   - component: {fileID: 1250306033}
   m_Layer: 0
   m_Name: grass (43)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10250,7 +10250,7 @@ GameObject:
   - component: {fileID: 1251387170}
   m_Layer: 0
   m_Name: grass (6)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10419,7 +10419,7 @@ GameObject:
   - component: {fileID: 1270609722}
   m_Layer: 0
   m_Name: grass (14)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10880,7 +10880,7 @@ GameObject:
   - component: {fileID: 1338664514}
   m_Layer: 0
   m_Name: grass (58)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10955,7 +10955,7 @@ GameObject:
   - component: {fileID: 1338686351}
   m_Layer: 0
   m_Name: grass (48)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11124,7 +11124,7 @@ GameObject:
   - component: {fileID: 1361165587}
   m_Layer: 0
   m_Name: grass (26)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11293,7 +11293,7 @@ GameObject:
   - component: {fileID: 1392207058}
   m_Layer: 0
   m_Name: grass (41)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12190,7 +12190,7 @@ GameObject:
   - component: {fileID: 1531933283}
   m_Layer: 0
   m_Name: grass (69)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12479,7 +12479,7 @@ GameObject:
   - component: {fileID: 1567881053}
   m_Layer: 0
   m_Name: grass (60)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12674,7 +12674,7 @@ GameObject:
   - component: {fileID: 1594704923}
   m_Layer: 0
   m_Name: grass (25)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12961,6 +12961,19 @@ GameObject:
   m_Component:
   - component: {fileID: 1634277885}
   - component: {fileID: 1634277886}
+  - component: {fileID: 1634277887}
+  - component: {fileID: 1634277899}
+  - component: {fileID: 1634277898}
+  - component: {fileID: 1634277897}
+  - component: {fileID: 1634277896}
+  - component: {fileID: 1634277895}
+  - component: {fileID: 1634277894}
+  - component: {fileID: 1634277893}
+  - component: {fileID: 1634277892}
+  - component: {fileID: 1634277891}
+  - component: {fileID: 1634277890}
+  - component: {fileID: 1634277889}
+  - component: {fileID: 1634277888}
   m_Layer: 0
   m_Name: PASTO
   m_TagString: pasto
@@ -13070,7 +13083,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -8.566326, y: -4.2112637}
+  m_Offset: {x: -34.317142, y: -4.3321805}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -13081,7 +13094,332 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 55.437943, y: 54.98685}
+  m_Size: {x: 3.9363174, y: 3.8746998}
+  m_EdgeRadius: 0
+--- !u!61 &1634277887
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1634277884}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -29.920647, y: -4.3414097}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.0594788, y: 10.905758}
+  m_EdgeRadius: 0
+--- !u!61 &1634277888
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1634277884}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 16.986263, y: -4.293638}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.9975739, y: 3.7958562}
+  m_EdgeRadius: 0
+--- !u!61 &1634277889
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1634277884}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 12.608486, y: -4.2874985}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.152153, y: 12.375}
+  m_EdgeRadius: 0
+--- !u!61 &1634277890
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1634277884}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 8.210724, y: -4.243746}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.579071, y: 20.687496}
+  m_EdgeRadius: 0
+--- !u!61 &1634277891
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1634277884}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 4.111325, y: -4.2499866}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.8934698, y: 29.218975}
+  m_EdgeRadius: 0
+--- !u!61 &1634277892
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1634277884}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.08725655, y: -4.306379}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.6177204, y: 37.865093}
+  m_EdgeRadius: 0
+--- !u!61 &1634277893
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1634277884}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -8.543575, y: -29.504923}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.6438332, y: 4.1060753}
+  m_EdgeRadius: 0
+--- !u!61 &1634277894
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1634277884}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -8.480358, y: -19.487259}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 12.005003, y: 15.645592}
+  m_EdgeRadius: 0
+--- !u!61 &1634277895
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1634277884}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -8.504019, y: 21.001196}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.6231003, y: 3.856266}
+  m_EdgeRadius: 0
+--- !u!61 &1634277896
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1634277884}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -8.595566, y: 10.931168}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 12.12365, y: 16.095367}
+  m_EdgeRadius: 0
+--- !u!61 &1634277897
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1634277884}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -17.082165, y: -4.300026}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.4797592, y: 37.34215}
+  m_EdgeRadius: 0
+--- !u!61 &1634277898
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1634277884}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -21.19777, y: -4.1909943}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.0503216, y: 29.193863}
+  m_EdgeRadius: 0
+--- !u!61 &1634277899
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1634277884}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -25.51534, y: -4.3414173}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.05949, y: 20.44463}
   m_EdgeRadius: 0
 --- !u!1 &1644370780
 GameObject:
@@ -13188,7 +13526,7 @@ GameObject:
   - component: {fileID: 1662285605}
   m_Layer: 0
   m_Name: grass (74)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13263,7 +13601,7 @@ GameObject:
   - component: {fileID: 1668131311}
   m_Layer: 0
   m_Name: grass (29)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13338,7 +13676,7 @@ GameObject:
   - component: {fileID: 1673398322}
   m_Layer: 0
   m_Name: grass (7)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13507,7 +13845,7 @@ GameObject:
   - component: {fileID: 1679398010}
   m_Layer: 0
   m_Name: grass (65)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13582,7 +13920,7 @@ GameObject:
   - component: {fileID: 1686875164}
   m_Layer: 0
   m_Name: grass (44)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13657,7 +13995,7 @@ GameObject:
   - component: {fileID: 1711133407}
   m_Layer: 0
   m_Name: grass (2)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13732,7 +14070,7 @@ GameObject:
   - component: {fileID: 1716959647}
   m_Layer: 0
   m_Name: grass (37)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13957,7 +14295,7 @@ GameObject:
   - component: {fileID: 1790734214}
   m_Layer: 0
   m_Name: grass (68)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14032,7 +14370,7 @@ GameObject:
   - component: {fileID: 1797913067}
   m_Layer: 0
   m_Name: grass (40)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14107,7 +14445,7 @@ GameObject:
   - component: {fileID: 1815127326}
   m_Layer: 0
   m_Name: grass (9)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14182,7 +14520,7 @@ GameObject:
   - component: {fileID: 1833965362}
   m_Layer: 0
   m_Name: grass (64)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14257,7 +14595,7 @@ GameObject:
   - component: {fileID: 1846997228}
   m_Layer: 0
   m_Name: grass (49)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14426,7 +14764,7 @@ GameObject:
   - component: {fileID: 1862438219}
   m_Layer: 0
   m_Name: grass (38)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14501,7 +14839,7 @@ GameObject:
   - component: {fileID: 1873327262}
   m_Layer: 0
   m_Name: grass (8)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14576,7 +14914,7 @@ GameObject:
   - component: {fileID: 1879422838}
   m_Layer: 0
   m_Name: grass (13)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14651,7 +14989,7 @@ GameObject:
   - component: {fileID: 1907744333}
   m_Layer: 0
   m_Name: grass (34)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14906,7 +15244,7 @@ GameObject:
   - component: {fileID: 1960726202}
   m_Layer: 0
   m_Name: grass (21)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14981,7 +15319,7 @@ GameObject:
   - component: {fileID: 1975163994}
   m_Layer: 0
   m_Name: grass (63)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15150,7 +15488,7 @@ GameObject:
   - component: {fileID: 2021916252}
   m_Layer: 0
   m_Name: grass (19)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15225,7 +15563,7 @@ GameObject:
   - component: {fileID: 2029448048}
   m_Layer: 0
   m_Name: grass (16)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15300,7 +15638,7 @@ GameObject:
   - component: {fileID: 2040466420}
   m_Layer: 0
   m_Name: grass
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15563,7 +15901,7 @@ GameObject:
   - component: {fileID: 2081093875}
   m_Layer: 0
   m_Name: grass (59)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15732,7 +16070,7 @@ GameObject:
   - component: {fileID: 2099670667}
   m_Layer: 0
   m_Name: grass (1)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15807,7 +16145,7 @@ GameObject:
   - component: {fileID: 2106697269}
   m_Layer: 0
   m_Name: grass (20)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15882,7 +16220,7 @@ GameObject:
   - component: {fileID: 2115420659}
   m_Layer: 0
   m_Name: grass (31)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15957,7 +16295,7 @@ GameObject:
   - component: {fileID: 2122802838}
   m_Layer: 0
   m_Name: grass (45)
-  m_TagString: pasto
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
