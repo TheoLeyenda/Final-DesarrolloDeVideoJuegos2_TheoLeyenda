@@ -220,7 +220,7 @@ public class HeadSnake : MonoBehaviour {
         if (collision.gameObject.tag == "puerta")
         {
             DataStructure.auxiliaryDataStructure.playerData.score = DataStructure.auxiliaryDataStructure.playerData.score + 50;
-            SceneManager.LoadScene("Pantalla de carga");
+            SceneManager.LoadScene("Nivel Completado");
         }
         if(collision.gameObject.tag == "puerta comun")
         {

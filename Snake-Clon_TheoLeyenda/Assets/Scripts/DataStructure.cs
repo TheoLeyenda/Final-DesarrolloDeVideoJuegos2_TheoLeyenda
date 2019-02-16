@@ -8,7 +8,10 @@ public class DataStructure : MonoBehaviour {
     // Use this for initialization
     public static DataStructure auxiliaryDataStructure;
     public int life;
-
+    [HideInInspector]
+    public float secondsInLevel;
+    [HideInInspector]
+    public float minutesInLevel;
     [HideInInspector]
     public PlayerData playerData;
     [HideInInspector]

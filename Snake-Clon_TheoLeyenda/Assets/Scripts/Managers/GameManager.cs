@@ -57,6 +57,7 @@ public class GameManager : MonoBehaviour {
         {
             seconds = seconds + Time.deltaTime;
             DataStructure.auxiliaryDataStructure.seconds = seconds;
+            DataStructure.auxiliaryDataStructure.secondsInLevel = seconds;
         }
         if(seconds >= 60)
         {
@@ -64,6 +65,8 @@ public class GameManager : MonoBehaviour {
             seconds = 0;
             DataStructure.auxiliaryDataStructure.minutes = minutes;
             DataStructure.auxiliaryDataStructure.seconds = seconds;
+            DataStructure.auxiliaryDataStructure.secondsInLevel = seconds;
+            DataStructure.auxiliaryDataStructure.minutesInLevel = minutes;
         }
         if (seconds < 10)
         {
