@@ -15,6 +15,7 @@ public class HeadSnake : MonoBehaviour {
     }
     //dependiendo de que valor tome esta variable es el puntaje que se le sumara al jugador cuando agarre un pickup de comida
     private int addScore = 10;
+    public GameObject[] lifesSprites;
     [HideInInspector]
     public int score;
     public bool up;
@@ -49,6 +50,14 @@ public class HeadSnake : MonoBehaviour {
     void Start () {
        
         DataStructure.auxiliaryDataStructure.SetPlayerValue();
+        for (int i = 0; i < lifesSprites.Length; i++)
+        {
+            lifesSprites[i].SetActive(false);
+        }
+        for (int i = 0; i< life; i++)
+        {
+            lifesSprites[i].SetActive(true);
+        }
         InitialMove();
         //cantOriginalVaperParts = VaperParts.Count;
         startPositionVaperParts = new List<Vector3>();

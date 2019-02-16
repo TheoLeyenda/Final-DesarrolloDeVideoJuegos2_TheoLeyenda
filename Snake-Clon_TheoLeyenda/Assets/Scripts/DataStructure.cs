@@ -62,9 +62,11 @@ public class DataStructure : MonoBehaviour {
     public void SetPlayerData()
     {
         playerData.life = HeadSnake.headSnake.life;
+        playerData.score = HeadSnake.headSnake.score;
     }
     public void SetPlayerValue()
     {
         HeadSnake.headSnake.life = playerData.life;
+        HeadSnake.headSnake.score = playerData.score;
     }
 }

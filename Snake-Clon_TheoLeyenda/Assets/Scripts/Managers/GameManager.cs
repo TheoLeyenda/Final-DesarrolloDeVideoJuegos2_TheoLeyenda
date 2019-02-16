@@ -29,9 +29,12 @@ public class GameManager : MonoBehaviour {
     [HideInInspector]
     public float seconds;
     public Text textScore;
-    //hacer el texto de tiempo.
+    public Text textTime;
+    public Text textActualityLevel;
 	void Start () {
         id = 0;
+        seconds = 0;
+        minutes = 0;
         phaseActuality = 1;
         InstanceGameManager = this;
         for (int i = 0; i < scoreRequired; i++)
@@ -39,6 +42,8 @@ public class GameManager : MonoBehaviour {
             Instantiate(food, Vector3.zero, Quaternion.identity);
         }
         textScore.text = "Puntaje: " + DataStructure.auxiliaryDataStructure.playerData.score;
+        textTime.text = "Tiempo: " + (int)minutes + ":" + "0" + (int)seconds;
+        textActualityLevel.text = "Nivel " + DataStructure.auxiliaryDataStructure.nextLevel.level;
     }
 	
 	// Update is called once per frame
@@ -48,17 +53,25 @@ public class GameManager : MonoBehaviour {
     }
     public void TimeOnLevel()
     {
-        if(seconds <= 59)
+        if(seconds < 60)
         {
             seconds = seconds + Time.deltaTime;
             DataStructure.auxiliaryDataStructure.seconds = seconds;
         }
-        if(seconds > 59)
+        if(seconds >= 60)
         {
             minutes++;
             seconds = 0;
             DataStructure.auxiliaryDataStructure.minutes = minutes;
             DataStructure.auxiliaryDataStructure.seconds = seconds;
+        }
+        if (seconds < 10)
+        {
+            textTime.text = "Tiempo: " + (int)minutes + ":" + "0" + (int)seconds;
+        }
+        if(seconds >= 10)
+        {
+            textTime.text = "Tiempo: " + (int)minutes + ":" + (int)seconds;
         }
     }
     public void CheckLevel()
