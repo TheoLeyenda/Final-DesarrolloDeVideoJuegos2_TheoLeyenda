@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DataStructure : MonoBehaviour {
 
     // Use this for initialization
     // Use this for initialization
     public static DataStructure auxiliaryDataStructure;
+    public float haighScore;
     public int life;
     [HideInInspector]
     public float secondsInLevel;
@@ -20,9 +22,10 @@ public class DataStructure : MonoBehaviour {
     public float seconds;
     [HideInInspector]
     public float minutes;
-
-    private float totalSeconds;
-    private float totalMinutes;
+    [HideInInspector]
+    public float totalSeconds;
+    [HideInInspector]
+    public float totalMinutes;
 
     private void Awake()
     {
@@ -39,19 +42,26 @@ public class DataStructure : MonoBehaviour {
     }
     private void Start()
     {
+        haighScore = 0;
         playerData.life = life;
         playerData.score = 0;
         nextLevel.level = 0;
     }
+    private void Update()
+    {
+        AddTotalTime();
+    }
     public void AddTotalTime()
     {
-        totalSeconds = totalSeconds + seconds;
-        if(totalSeconds > 59)
+        if (totalSeconds < 60)
+        {
+            totalSeconds = totalSeconds + Time.deltaTime;
+        }
+        if(totalSeconds >= 60)
         {
             totalMinutes++;
-            totalSeconds = totalSeconds - 59;
+            totalSeconds = 0; 
         }
-        totalMinutes = totalMinutes + minutes;
     }
     public struct NextLevel
     {

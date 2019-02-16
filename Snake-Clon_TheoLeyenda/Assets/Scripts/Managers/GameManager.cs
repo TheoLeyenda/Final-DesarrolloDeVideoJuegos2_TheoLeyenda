@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour {
     public Text textScore;
     public Text textTime;
     public Text textActualityLevel;
+    public Text textHaighScore;
 	void Start () {
         id = 0;
         seconds = 0;
@@ -44,6 +45,12 @@ public class GameManager : MonoBehaviour {
         textScore.text = "Puntaje: " + DataStructure.auxiliaryDataStructure.playerData.score;
         textTime.text = "Tiempo: " + (int)minutes + ":" + "0" + (int)seconds;
         textActualityLevel.text = "Nivel " + DataStructure.auxiliaryDataStructure.nextLevel.level;
+        textHaighScore.text = "Puntuacion Maxima: " + DataStructure.auxiliaryDataStructure.haighScore;
+        textHaighScore.gameObject.SetActive(false);
+        if(DataStructure.auxiliaryDataStructure.haighScore > 0)
+        {
+            textHaighScore.gameObject.SetActive(true);
+        }
     }
 	
 	// Update is called once per frame
@@ -56,15 +63,12 @@ public class GameManager : MonoBehaviour {
         if(seconds < 60)
         {
             seconds = seconds + Time.deltaTime;
-            DataStructure.auxiliaryDataStructure.seconds = seconds;
             DataStructure.auxiliaryDataStructure.secondsInLevel = seconds;
         }
         if(seconds >= 60)
         {
             minutes++;
             seconds = 0;
-            DataStructure.auxiliaryDataStructure.minutes = minutes;
-            DataStructure.auxiliaryDataStructure.seconds = seconds;
             DataStructure.auxiliaryDataStructure.secondsInLevel = seconds;
             DataStructure.auxiliaryDataStructure.minutesInLevel = minutes;
         }

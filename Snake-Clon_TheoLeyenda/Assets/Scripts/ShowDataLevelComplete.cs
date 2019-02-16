@@ -12,7 +12,6 @@ public class ShowDataLevelComplete : MonoBehaviour {
     public Text textLifes;
 	void Start () {
         textScore.text = "Puntaje: "+DataStructure.auxiliaryDataStructure.playerData.score;
-        DataStructure.auxiliaryDataStructure.AddTotalTime();
         if(DataStructure.auxiliaryDataStructure.secondsInLevel >= 10)
         {
             textTime.text = "Tiempo: " + (int)DataStructure.auxiliaryDataStructure.minutesInLevel + ":" + (int)DataStructure.auxiliaryDataStructure.secondsInLevel;
