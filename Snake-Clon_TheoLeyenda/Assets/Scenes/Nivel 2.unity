@@ -2706,6 +2706,10 @@ Prefab:
       propertyPath: lifesSprites.Array.data[2]
       value: 
       objectReference: {fileID: 1070698881}
+    - target: {fileID: 1133622285576206, guid: 3baa4c6785b174a4ca261574dae49a45, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3baa4c6785b174a4ca261574dae49a45, type: 2}
   m_IsPrefabAsset: 0

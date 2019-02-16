@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour {
     public Text textTime;
     public Text textActualityLevel;
     public Text textHaighScore;
+    public bool InfinityLevel;
 	void Start () {
         id = 0;
         seconds = 0;
@@ -55,7 +56,10 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        CheckLevel();
+        if (InfinityLevel == false)
+        {
+            CheckLevel();
+        }
         TimeOnLevel();
     }
     public void TimeOnLevel()

@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour {
 
     public GameObject mainMenu;
     public GameObject creditsMenu;
+    public GameObject infinityLevelMenu;
     private void Start()
     {
         creditsMenu.SetActive(false);
@@ -22,9 +23,15 @@ public class MainMenu : MonoBehaviour {
         creditsMenu.SetActive(true);
 
     }
+    public void InfinityLevelMenu()
+    {
+        mainMenu.SetActive(false);
+        infinityLevelMenu.SetActive(true);
+    }
     public void BackMenu()
     {
         creditsMenu.SetActive(false);
+        infinityLevelMenu.SetActive(false);
         mainMenu.SetActive(true);
     }
     public void ExitGame()
