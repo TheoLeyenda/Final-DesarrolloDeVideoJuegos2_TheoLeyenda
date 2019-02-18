@@ -50,7 +50,7 @@ public class DataStructure : MonoBehaviour {
     private void Update()
     {
         AddTotalTime();
-    }
+    } 
     public void AddTotalTime()
     {
         if (totalSeconds < 60)

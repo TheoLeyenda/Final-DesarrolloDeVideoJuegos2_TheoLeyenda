@@ -23,6 +23,18 @@ public class MainMenu : MonoBehaviour {
         creditsMenu.SetActive(true);
 
     }
+    public void IslaSolitaria()
+    {
+        SceneManager.LoadScene("Isla Solitaria");
+    }
+    public void Laberinto()
+    {
+        SceneManager.LoadScene("Laberinto");
+    }
+    public void Clasico()
+    {
+        SceneManager.LoadScene("Clasico");
+    }
     public void InfinityLevelMenu()
     {
         mainMenu.SetActive(false);

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Food : MonoBehaviour {
 
@@ -14,6 +15,7 @@ public class Food : MonoBehaviour {
         teleport = true;
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.enabled = false;
+        
     }
     private void Update()
     {

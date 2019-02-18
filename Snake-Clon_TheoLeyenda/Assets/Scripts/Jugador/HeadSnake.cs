@@ -48,8 +48,9 @@ public class HeadSnake : MonoBehaviour {
         headSnake = this;
     }
     void Start () {
-       
+     
         DataStructure.auxiliaryDataStructure.SetPlayerValue();
+        
         for (int i = 0; i < lifesSprites.Length; i++)
         {
             lifesSprites[i].SetActive(false);
@@ -57,6 +58,17 @@ public class HeadSnake : MonoBehaviour {
         for (int i = 0; i< life; i++)
         {
             lifesSprites[i].SetActive(true);
+        }
+        if(GameManager.InstanceGameManager.InfinityLevel)
+        {
+            for(int i = 0; i< lifesSprites.Length; i++)
+            {
+                lifesSprites[i].SetActive(false);
+            }
+            for(int i = 0; i< 1; i++)
+            {
+                lifesSprites[i].SetActive(true);
+            }
         }
         InitialMove();
         //cantOriginalVaperParts = VaperParts.Count;
@@ -215,7 +227,14 @@ public class HeadSnake : MonoBehaviour {
             //cada vez que morimos volvemos a cargar la escena en la que se encuentra el jugador
             life--;
             DataStructure.auxiliaryDataStructure.playerData.life = life;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            if (GameManager.InstanceGameManager.InfinityLevel == true)
+            {
+                SceneManager.LoadScene("GameOver");
+            }
+            else if (GameManager.InstanceGameManager.InfinityLevel == false)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
         }
         if (collision.gameObject.tag == "puerta")
         {

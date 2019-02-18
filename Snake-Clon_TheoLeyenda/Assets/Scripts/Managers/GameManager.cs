@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -45,7 +46,14 @@ public class GameManager : MonoBehaviour {
         }
         textScore.text = "Puntaje: " + DataStructure.auxiliaryDataStructure.playerData.score;
         textTime.text = "Tiempo: " + (int)minutes + ":" + "0" + (int)seconds;
-        textActualityLevel.text = "Nivel " + DataStructure.auxiliaryDataStructure.nextLevel.level;
+        if (InfinityLevel == false)
+        {
+            textActualityLevel.text = "Nivel " + DataStructure.auxiliaryDataStructure.nextLevel.level;
+        }
+        if(InfinityLevel == true)
+        {
+            textActualityLevel.text = SceneManager.GetActiveScene().name;
+        }
         textHaighScore.text = "Puntuacion Maxima: " + DataStructure.auxiliaryDataStructure.haighScore;
         textHaighScore.gameObject.SetActive(false);
         if(DataStructure.auxiliaryDataStructure.haighScore > 0)
