@@ -208,7 +208,7 @@ MonoBehaviour:
   LevelLoad: {fileID: 1809141143}
   load: {fileID: 418557883}
   percentageLoadMaximun: 100
-  loadSpeed: 12
+  loadSpeed: 15
 --- !u!4 &882125984
 Transform:
   m_ObjectHideFlags: 0

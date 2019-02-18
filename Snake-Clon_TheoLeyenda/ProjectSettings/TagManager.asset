@@ -14,6 +14,7 @@ TagManager:
   - puerta
   - puerta final
   - puerta comun
+  - punto curva
   layers:
   - Default
   - TransparentFX

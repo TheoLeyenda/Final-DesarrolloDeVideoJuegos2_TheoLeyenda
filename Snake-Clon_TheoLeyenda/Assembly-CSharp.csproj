@@ -69,6 +69,8 @@
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Menu\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\Obstaculos\Car.cs" />
+    <Compile Include="Assets\Scripts\Obstaculos\Trap1.cs" />
     <Compile Include="Assets\Scripts\PickUp\Food.cs" />
     <Compile Include="Assets\Scripts\ShowDataLevelComplete.cs" />
     <Compile Include="Assets\Scripts\SplashScreenController.cs" />
