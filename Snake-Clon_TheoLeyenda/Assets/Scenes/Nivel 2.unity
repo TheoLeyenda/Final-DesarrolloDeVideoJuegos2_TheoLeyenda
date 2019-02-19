@@ -3362,7 +3362,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4888057573032002, guid: aa8d15b63e321a94382fb977935c37ff, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.75
+      value: -4.72
       objectReference: {fileID: 0}
     - target: {fileID: 4888057573032002, guid: aa8d15b63e321a94382fb977935c37ff, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3395,6 +3395,11 @@ Prefab:
     - target: {fileID: 1035718012101248, guid: aa8d15b63e321a94382fb977935c37ff, type: 2}
       propertyPath: m_Name
       value: Trampa 1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114670085086163358, guid: aa8d15b63e321a94382fb977935c37ff,
+        type: 2}
+      propertyPath: timeActive
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa8d15b63e321a94382fb977935c37ff, type: 2}
@@ -3956,7 +3961,7 @@ Prefab:
     - target: {fileID: 114670085086163358, guid: aa8d15b63e321a94382fb977935c37ff,
         type: 2}
       propertyPath: timeActive
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114670085086163358, guid: aa8d15b63e321a94382fb977935c37ff,
         type: 2}
