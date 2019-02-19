@@ -11,7 +11,11 @@ public class Trap1 : MonoBehaviour {
     private float auxTimeDisable;
     public bool enterTimeActive;
     private bool enterTimeDisable;
-	void Start () {
+    //public Animator animator;
+    private SpriteRenderer spriteRenderer;
+    void Start() {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        //animator.enabled = false;
         auxTimeActive = timeActive;
         auxTimeDisable = timeDisable;
         if (enterTimeActive == false)
@@ -24,12 +28,12 @@ public class Trap1 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         CheckTrap();
-        Debug.Log(gameObject.tag);
 	}
     public void CheckTrap()
     {
         if(timeActive > 0 && enterTimeActive)
         {
+            
             gameObject.tag = "limite";
             timeActive = timeActive - Time.deltaTime;
             timeDisable = 0;
@@ -39,15 +43,20 @@ public class Trap1 : MonoBehaviour {
             enterTimeDisable = true;
             enterTimeActive = false;
             timeDisable = auxTimeDisable;
+            //animator.enabled = false;
+            spriteRenderer.enabled = false;
         }
         if(timeDisable > 0 && enterTimeDisable)
         {
+            
             gameObject.tag = "pasto";
             timeDisable = timeDisable - Time.deltaTime;
             timeActive = 0;
         }
         if(timeDisable <= 0 && enterTimeDisable)
         {
+            //animator.enabled = true;
+            spriteRenderer.enabled = true;
             enterTimeDisable = false;
             enterTimeActive = true;
             timeActive = auxTimeActive;
