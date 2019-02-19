@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 224627601774692240}
   - component: {fileID: 222543308893729730}
   - component: {fileID: 114685008970655728}
+  - component: {fileID: 95873941481562792}
   m_Layer: 0
   m_Name: Vida 3
   m_TagString: Untagged
@@ -208,6 +209,7 @@ GameObject:
   - component: {fileID: 224920132619349352}
   - component: {fileID: 222173075824141308}
   - component: {fileID: 114676462560556996}
+  - component: {fileID: 95023022122402090}
   m_Layer: 0
   m_Name: Vida 2
   m_TagString: Untagged
@@ -274,6 +276,7 @@ GameObject:
   - component: {fileID: 224860565500139218}
   - component: {fileID: 222521890044307090}
   - component: {fileID: 114432616313946204}
+  - component: {fileID: 95945711029858542}
   m_Layer: 0
   m_Name: Vida 1
   m_TagString: Untagged
@@ -449,6 +452,60 @@ Transform:
   m_Father: {fileID: 224246710382721194}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95023022122402090
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1526941657516802}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e6dcb54f3e743b243a1ff122b961eec6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!95 &95873941481562792
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1185758613660054}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e6dcb54f3e743b243a1ff122b961eec6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!95 &95945711029858542
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1668059579271672}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e6dcb54f3e743b243a1ff122b961eec6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114084440712387356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -667,7 +724,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 303c664fcc7d9674d8d19804af55ecba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 803ef441bdb52ce4a97f725faec8f89c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -890,7 +947,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 303c664fcc7d9674d8d19804af55ecba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 803ef441bdb52ce4a97f725faec8f89c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -917,7 +974,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 303c664fcc7d9674d8d19804af55ecba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 803ef441bdb52ce4a97f725faec8f89c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
