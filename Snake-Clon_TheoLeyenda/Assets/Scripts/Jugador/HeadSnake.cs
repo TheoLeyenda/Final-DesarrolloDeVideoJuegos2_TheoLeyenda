@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class HeadSnake : MonoBehaviour {
 
 	//definimos las direcciones en las que se movera la bibora.
-    enum Direcction
+    public enum Direcction
     {
         up,
         down,
@@ -31,6 +31,7 @@ public class HeadSnake : MonoBehaviour {
     //private Vector3 startPosition;
     [HideInInspector]
     public int life =3;
+
     private Direcction direcction;
     public float rangeTeleportFoodX;
     public float rangeTeleportFoodY;
@@ -50,7 +51,6 @@ public class HeadSnake : MonoBehaviour {
     void Start () {
      
         DataStructure.auxiliaryDataStructure.SetPlayerValue();
-        
         for (int i = 0; i < lifesSprites.Length; i++)
         {
             lifesSprites[i].SetActive(false);
@@ -59,15 +59,18 @@ public class HeadSnake : MonoBehaviour {
         {
             lifesSprites[i].SetActive(true);
         }
-        if(GameManager.InstanceGameManager.InfinityLevel)
+        if (GameManager.InstanceGameManager != null)
         {
-            for(int i = 0; i< lifesSprites.Length; i++)
+            if (GameManager.InstanceGameManager.InfinityLevel)
             {
-                lifesSprites[i].SetActive(false);
-            }
-            for(int i = 0; i< 1; i++)
-            {
-                lifesSprites[i].SetActive(true);
+                for (int i = 0; i < lifesSprites.Length; i++)
+                {
+                    lifesSprites[i].SetActive(false);
+                }
+                for (int i = 0; i < 1; i++)
+                {
+                    lifesSprites[i].SetActive(true);
+                }
             }
         }
         InitialMove();
@@ -248,6 +251,28 @@ public class HeadSnake : MonoBehaviour {
         if (collision.gameObject.tag == "puerta final")
         {
             SceneManager.LoadScene("Juego Completado");
+        }
+    }
+    public Direcction GetDirection()
+    {
+        return direcction;
+    }
+    public void SetDirecction(int dir)
+    {
+        switch(dir)
+        {
+            case 0:
+                direcction = Direcction.up;
+                break;
+            case 1:
+                direcction = Direcction.down;
+                break;
+            case 2:
+                direcction = Direcction.left;
+                break;
+            case 3:
+                direcction = Direcction.right;
+                break;
         }
     }
 }

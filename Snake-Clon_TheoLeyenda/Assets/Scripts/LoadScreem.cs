@@ -19,8 +19,17 @@ public class LoadScreem : MonoBehaviour {
         System.GC.Collect();
         percentageLoad = 0;
         dataStructure = DataStructure.auxiliaryDataStructure;
-        LevelLoad.text = "Nivel "+(dataStructure.nextLevel.level +1);
-        dataStructure.nextLevel.level++;
+        if(PlayerPrefs.GetInt("Guardado") == 0)
+        {
+            LevelLoad.text = "Nivel " + (dataStructure.nextLevel.level + 1);
+            dataStructure.nextLevel.level++;
+        }
+        if(PlayerPrefs.GetInt("Guardado") == 1)
+        {
+            LevelLoad.text = "Nivel " + dataStructure.nextLevel.level;
+        }
+            
+
     }
 
     // Update is called once per frame

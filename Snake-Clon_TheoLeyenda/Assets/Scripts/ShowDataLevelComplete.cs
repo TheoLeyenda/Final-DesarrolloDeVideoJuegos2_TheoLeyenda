@@ -10,7 +10,11 @@ public class ShowDataLevelComplete : MonoBehaviour {
     public Text textScore;
     public Text textTime;
     public Text textLifes;
-	void Start () {
+    void Start() {
+        if (PlayerPrefs.GetInt("Guardado") == 1)
+        {
+            DataStructure.auxiliaryDataStructure.nextLevel.level++;
+        }
         textScore.text = "Puntaje: "+DataStructure.auxiliaryDataStructure.playerData.score;
         if(DataStructure.auxiliaryDataStructure.secondsInLevel >= 10)
         {

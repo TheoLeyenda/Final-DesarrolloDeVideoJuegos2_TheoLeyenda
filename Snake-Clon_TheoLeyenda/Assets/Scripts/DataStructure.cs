@@ -71,6 +71,10 @@ public class DataStructure : MonoBehaviour {
     {
         public int life;
         public int score;
+        public float x;
+        public float y;
+        public float z;
+        public int direcction;
     }
     public void SetPlayerData()
     {
@@ -79,7 +83,12 @@ public class DataStructure : MonoBehaviour {
     }
     public void SetPlayerValue()
     {
+        /*if (PlayerPrefs.GetInt("Guardado") == 1)
+        {
+            HeadSnake.headSnake.transform.position = new Vector3(playerData.x, playerData.y, playerData.z);
+            HeadSnake.headSnake.SetDirecction(PlayerPrefs.GetInt("Direcion"));
+        }*/
         HeadSnake.headSnake.life = playerData.life;
-        HeadSnake.headSnake.score = playerData.score;
+        HeadSnake.headSnake.score = playerData.score;        
     }
 }
