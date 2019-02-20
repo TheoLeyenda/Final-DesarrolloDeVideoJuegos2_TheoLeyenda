@@ -50,6 +50,7 @@ public class HeadSnake : MonoBehaviour {
     }
     void Start () {
      
+
         DataStructure.auxiliaryDataStructure.SetPlayerValue();
         for (int i = 0; i < lifesSprites.Length; i++)
         {

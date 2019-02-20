@@ -22,7 +22,7 @@ public class PauseMenu : MonoBehaviour {
     {
         PlayerPrefs.SetInt("Nivel",DataStructure.auxiliaryDataStructure.nextLevel.level);
         PlayerPrefs.SetInt("Puntaje", DataStructure.auxiliaryDataStructure.playerData.score);
-        PlayerPrefs.SetInt("Vidas", DataStructure.auxiliaryDataStructure.life);
+        PlayerPrefs.SetInt("Vidas", DataStructure.auxiliaryDataStructure.playerData.life);
         PlayerPrefs.SetFloat("X", HeadSnake.headSnake.transform.position.x);
         PlayerPrefs.SetFloat("Y", HeadSnake.headSnake.transform.position.y);
         PlayerPrefs.SetFloat("Z", HeadSnake.headSnake.transform.position.z);
