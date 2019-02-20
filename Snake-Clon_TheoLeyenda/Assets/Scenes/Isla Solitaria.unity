@@ -654,6 +654,16 @@ Prefab:
       propertyPath: m_Name
       value: Limites (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 212238598518051366, guid: a91b5798885cc0641b134c7865bc1b0c,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212238598518051366, guid: a91b5798885cc0641b134c7865bc1b0c,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.34509805
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a91b5798885cc0641b134c7865bc1b0c, type: 2}
   m_IsPrefabAsset: 0
@@ -3457,6 +3467,16 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 0.38769546
       objectReference: {fileID: 0}
+    - target: {fileID: 212238598518051366, guid: a91b5798885cc0641b134c7865bc1b0c,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212238598518051366, guid: a91b5798885cc0641b134c7865bc1b0c,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.34509805
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a91b5798885cc0641b134c7865bc1b0c, type: 2}
   m_IsPrefabAsset: 0
@@ -3524,6 +3544,16 @@ Prefab:
     - target: {fileID: 4471358628130368, guid: a91b5798885cc0641b134c7865bc1b0c, type: 2}
       propertyPath: m_LocalScale.x
       value: 0.38769546
+      objectReference: {fileID: 0}
+    - target: {fileID: 212238598518051366, guid: a91b5798885cc0641b134c7865bc1b0c,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212238598518051366, guid: a91b5798885cc0641b134c7865bc1b0c,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.34509805
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a91b5798885cc0641b134c7865bc1b0c, type: 2}
@@ -13539,6 +13569,16 @@ Prefab:
       propertyPath: m_Name
       value: Limites (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 212238598518051366, guid: a91b5798885cc0641b134c7865bc1b0c,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212238598518051366, guid: a91b5798885cc0641b134c7865bc1b0c,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.34509805
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a91b5798885cc0641b134c7865bc1b0c, type: 2}
   m_IsPrefabAsset: 0
@@ -15777,6 +15817,16 @@ Prefab:
       propertyPath: m_Size.y
       value: 1.0003945
       objectReference: {fileID: 0}
+    - target: {fileID: 212238598518051366, guid: a91b5798885cc0641b134c7865bc1b0c,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212238598518051366, guid: a91b5798885cc0641b134c7865bc1b0c,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.34509805
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a91b5798885cc0641b134c7865bc1b0c, type: 2}
   m_IsPrefabAsset: 0
@@ -16999,6 +17049,16 @@ Prefab:
     - target: {fileID: 1237867038903294, guid: a91b5798885cc0641b134c7865bc1b0c, type: 2}
       propertyPath: m_Name
       value: Limites (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212238598518051366, guid: a91b5798885cc0641b134c7865bc1b0c,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212238598518051366, guid: a91b5798885cc0641b134c7865bc1b0c,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.34509805
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a91b5798885cc0641b134c7865bc1b0c, type: 2}

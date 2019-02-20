@@ -37,6 +37,10 @@ public class GameOver : MonoBehaviour {
             {
                 textLife.text = "Vidas Restantes: 0";
             }
+            if (SceneManager.GetActiveScene().name == "GameOver")
+            {
+                textLife.text = "Vidas Restantes: 0";
+            }
         }
 
     }
