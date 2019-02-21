@@ -9,9 +9,11 @@ public class Food : MonoBehaviour {
     public SpriteRenderer spriteRenderer;
     private bool teleport;
     public bool notTeleport;
+    public Sprite[] sprites;
 
     private void Start()
     {
+        ReSkin();
         teleport = true;
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.enabled = false;
@@ -28,6 +30,11 @@ public class Food : MonoBehaviour {
         {
             spriteRenderer.enabled = true;
         }
+    }
+    public void ReSkin()
+    {
+        int random = Random.Range(0, sprites.Length);
+        spriteRenderer.sprite = sprites[random];
     }
     private void OnTriggerStay2D(Collider2D collision)
     {

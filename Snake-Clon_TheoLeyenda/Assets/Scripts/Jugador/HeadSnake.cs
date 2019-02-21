@@ -207,6 +207,8 @@ public class HeadSnake : MonoBehaviour {
 
         if (collision.gameObject.tag == "comida")
         {
+            Food food = collision.GetComponent<Food>();
+            food.ReSkin();
             score = score + addScore;
             DataStructure.auxiliaryDataStructure.playerData.score = DataStructure.auxiliaryDataStructure.playerData.score + addScore;
             GameManager.InstanceGameManager.textScore.text = "Puntaje: " +DataStructure.auxiliaryDataStructure.playerData.score;
@@ -223,6 +225,14 @@ public class HeadSnake : MonoBehaviour {
             DataStructure.auxiliaryDataStructure.playerData.score = DataStructure.auxiliaryDataStructure.playerData.score + addScore;
             GameManager.InstanceGameManager.textScore.text = "Puntaje: " + DataStructure.auxiliaryDataStructure.playerData.score;
             GameManager.InstanceGameManager.score++;
+            if (GameManager.InstanceGameManager.namberLevel == 1 || GameManager.InstanceGameManager.namberLevel == 2)
+            {
+                GameManager.InstanceGameManager.textGrabbedFood.text = "" + GameManager.InstanceGameManager.score + "/" + GameManager.InstanceGameManager.scoreRequired;
+            }
+            if(GameManager.InstanceGameManager.namberLevel == 3 && GameManager.InstanceGameManager.score <= GameManager.InstanceGameManager.totalAddscoresRequireds)
+            {
+                GameManager.InstanceGameManager.textGrabbedFood.text = "" + GameManager.InstanceGameManager.score + "/" + GameManager.InstanceGameManager.totalAddscoresRequireds;
+            }
             VaperParts.Add(Instantiate(vaperPartPrefab, VaperParts[VaperParts.Count - 1].transform.position, Quaternion.identity).transform);
             collision.gameObject.SetActive(false);
         }

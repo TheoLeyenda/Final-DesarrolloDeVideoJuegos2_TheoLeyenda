@@ -33,6 +33,9 @@ public class GameManager : MonoBehaviour {
     public Text textTime;
     public Text textActualityLevel;
     public Text textHaighScore;
+    public Text textGrabbedFood;
+    [HideInInspector]
+    public int totalAddscoresRequireds;
     public bool InfinityLevel;
 	void Start () {
         id = 0;
@@ -49,6 +52,17 @@ public class GameManager : MonoBehaviour {
         if (InfinityLevel == false)
         {
             textActualityLevel.text = "Nivel " + DataStructure.auxiliaryDataStructure.nextLevel.level;
+            if (namberLevel == 1 || namberLevel == 2)
+            {
+                textGrabbedFood.text = "" + score + "/" + scoreRequired;
+            }
+            if (namberLevel == 3)
+            {
+                
+                totalAddscoresRequireds = totalAddscoresRequireds + scoresRequireds[scoresRequireds.Length-1];
+                totalAddscoresRequireds = totalAddscoresRequireds + 4;
+                textGrabbedFood.text = "" + score + "/" + totalAddscoresRequireds;
+            }
         }
         if(InfinityLevel == true)
         {
