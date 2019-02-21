@@ -44,13 +44,15 @@ public class HeadSnake : MonoBehaviour {
     public float distanceOfMovement;
     private Vector3 lastPosition;
 
+    private AudioSource audioSource;
+    public AudioClip eatEffect;
     private void Awake()
     {
         headSnake = this;
     }
     void Start () {
-     
 
+        audioSource = GetComponent<AudioSource>();
         DataStructure.auxiliaryDataStructure.SetPlayerValue();
         for (int i = 0; i < lifesSprites.Length; i++)
         {
@@ -207,6 +209,7 @@ public class HeadSnake : MonoBehaviour {
 
         if (collision.gameObject.tag == "comida")
         {
+            audioSource.PlayOneShot(eatEffect);
             Food food = collision.GetComponent<Food>();
             food.ReSkin();
             score = score + addScore;
@@ -221,6 +224,7 @@ public class HeadSnake : MonoBehaviour {
         }
         if (collision.gameObject.tag == "comida destruible")
         {
+            audioSource.PlayOneShot(eatEffect);
             score = score + addScore;
             DataStructure.auxiliaryDataStructure.playerData.score = DataStructure.auxiliaryDataStructure.playerData.score + addScore;
             GameManager.InstanceGameManager.textScore.text = "Puntaje: " + DataStructure.auxiliaryDataStructure.playerData.score;
