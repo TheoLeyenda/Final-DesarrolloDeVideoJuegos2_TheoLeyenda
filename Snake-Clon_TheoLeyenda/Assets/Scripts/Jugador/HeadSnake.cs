@@ -76,6 +76,17 @@ public class HeadSnake : MonoBehaviour {
                 }
             }
         }
+        if(SceneManager.GetActiveScene().name == "Laberinto")
+        {
+            for (int i = 0; i < lifesSprites.Length; i++)
+            {
+                lifesSprites[i].SetActive(false);
+            }
+            for (int i = 0; i < 1; i++)
+            {
+                lifesSprites[i].SetActive(true);
+            }
+        }
         InitialMove();
         //cantOriginalVaperParts = VaperParts.Count;
         startPositionVaperParts = new List<Vector3>();

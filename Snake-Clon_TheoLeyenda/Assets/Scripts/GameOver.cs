@@ -20,7 +20,7 @@ public class GameOver : MonoBehaviour {
                 DataStructure.auxiliaryDataStructure.haighScore = DataStructure.auxiliaryDataStructure.playerData.score;
             }
             textHaighScore.text = "Puntuacion Maxima: " + DataStructure.auxiliaryDataStructure.haighScore;
-            textScore.text = "Tu Puntuacion:" + DataStructure.auxiliaryDataStructure.playerData.score;
+            textScore.text = "Tu Puntuacion: " + DataStructure.auxiliaryDataStructure.playerData.score;
             if (DataStructure.auxiliaryDataStructure.totalSeconds >= 10)
             {
                 textTime.text = "Tiempo Jugado: " + (int)DataStructure.auxiliaryDataStructure.totalMinutes + ":" + (int)DataStructure.auxiliaryDataStructure.totalSeconds;
